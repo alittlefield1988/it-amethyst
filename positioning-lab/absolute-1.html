@@ -16,7 +16,7 @@ body {
 	text-align: center;
 	line-height: 24px;
 }
-#wrapper {
+.wrapper {
 	background-color: #FFF;
 	border-top-width: 1px;
 	border-right-width: 1px;
@@ -30,20 +30,43 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 }
-#red {
+.red {
 	background-color: #900;
+	width:150px;
+	height:150px;
+	position:absolute;
+	top:0;
+	left:0;
 }
-#green {
+.green {
 	background-color: #090;
+	width:150px;
+	height:150px;
+	position:absolute;
+	top:0;
+	right:0;
 }
-#blue {
+.blue {
 	background-color: #00F;
+	width:150px;
+	height:150px;
+	position:absolute;
+	bottom:0;
+	left:0;
 }
-#purple {
+.purple {
 	background-color: #63C;
+	width:150px;
+	height:150px;
+	position:absolute;
+	bottom:0;
+	right:0;
 }
-#footer {
+.footer {
 	background-color: #666;
+	width:150px;
+	height:150px;
+	margin: 20px auto;
 }
 h1 {
 	color: #000;
@@ -55,12 +78,12 @@ h1 {
 
 <body>
 <h1>Absolute 1</h1>
-<div id="wrapper">
-  <div id="red">Red</div>
-  <div id="green">Green</div>
-  <div id="blue">Blue</div>
-  <div id="purple">Purple</div>
-  <div id="footer">Footer</div>
+<div class="wrapper">
+  <div class="red">Red</div>
+  <div class="green">Green</div>
+  <div class="blue">Blue</div>
+  <div class="purple">Purple</div>
+  <div class="footer">Footer</div>
 </div>
 </body>
 </html>
