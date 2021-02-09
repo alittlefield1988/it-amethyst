@@ -22,10 +22,7 @@ function displayCalculations() {
         
         document.getElementById("circumference").innerHTML = "";
         
-        var radius;
-        var radiusfp;
         var circumference;
-        var result;
         
         radius = document.getElementById("radius").value;
         
@@ -37,10 +34,7 @@ function displayCalculations() {
         
         document.getElementById("area").innerHTML = "";
         
-        var radius;
-        var radiusfp;
         var area;
-        var result;
         
         radius = document.getElementById("radius").value;
         
