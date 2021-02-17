@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+    
+<head>
+    <title>Diamond State Kinders</title>    
+    <meta charset="utf-8"/>
+    <meta name="description" content="Diamond State Kinders strives to improve and grow the Kinder breed of goat"/>
+    <meta name="keywords" content="farm, family, goat, milk, cheese, butter, soap, alexander, arkansas"/>
+    <meta name="author" content="Anya Littlefield"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/css/style.css" rel="stylesheet"/>
+    <link href="https://use.typekit.net/pud5byp.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/additional-methods.min.js"></script>
+</head>
+
+<body>
+    <header class="primary">
+        <h1 id="myanchor"><a href="index.html">Diamond State Kinders</a></h1>
+        <nav class="primary">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ourkinders.html">Our Kinders</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="additional-elements" class="container">
+        <h2>Contact Us</h2>
+          <p>Fill out the form below to get in touch, and we will respond as soon as possible!</p>
+            <form id="ContactForm" action="https://brucebauer.info/assets/ITEC3650/datadump.php">
+              <label class="formlabel" for="FirstName">First Name:</label>
+              <input type="text" id="FirstName" name="FirstName" size=30 maxlength=30
+                data-rule-required="true"  data-msg-required="First Name is Required" >
+              <label for="FirstName" class="error"></label>
+              <br>
+              <label class="formlabel" for="LastName">Last Name:</label>
+              <input type="text" id="LastName" name="LastName" size=30 maxlength=30
+                data-rule-required="true"  data-msg-required="Last Name is Required" >
+              <label for="LastName" class="error"></label>
+              <br>
+              <label class="formlabel" for="Email">Email:</label>
+              <input type="text" id="Email" name="Email" size=30 maxlength=30
+                data-rule-required="true"  data-msg-required="Email is Required" 
+                data-rule-email="true"  data-msg-email="Invalid Email" >
+              <label for="Email" class="error"></label>
+              <br>
+              <br>
+              <label class="formlabel" for="message">Type message here:</label>
+              <textarea id="message" name="Message" rows=10 cols=30></textarea><br>
+              <hr>
+              <input type="submit" value="Send">
+              <br>
+              <br>
+            </form>
+            <script src="assets/js/script.js"></script>
+    </section>
+    
+    <footer class="primary">
+            <nav>
+                <ul>
+                    <li><a href="#myanchor">Take Me to the Top</a></li>
+                    <li><a href="mailto:asmakashova@ualr.edu">Report Technical Issue</a></li>
+                </ul>
+            </nav>
+            <h6>&copy; Anya Littlefield 2021</h6>
+        </footer>
+</body>
+</html>
