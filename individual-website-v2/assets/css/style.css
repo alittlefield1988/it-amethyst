@@ -22,7 +22,7 @@ html {
     display: flex;
     width: 80vw;
     margin: 20px auto;
-    max-width: 1080px;
+    max-width: 992px;
 }
 
 .img-left {
@@ -31,7 +31,7 @@ html {
   border-radius: 4px;
   padding: 5px;
   margin: 10px 20px 10px 0;
-  max-width:400px;
+  max-width:600px;
 }
 
 .img-right {
@@ -40,7 +40,7 @@ html {
   border-radius: 4px;
   padding: 5px;
   margin: 10px 0 10px 20px;
-  max-width:400px;
+  max-width:600px;
 }
 
 .img-center {
@@ -49,7 +49,7 @@ html {
   border-radius: 4px;
   padding: 5px;
   margin: 20px auto;
-  max-width:400px;
+  max-width:600px;
 }
 
 img {
@@ -140,14 +140,14 @@ header.primary nav li a:hover, header.primary nav li a:active {
     flex-direction: column;
     justify-content: space-between;
     border-bottom: 1px solid #c0c0c0;
-    padding-bottom: 1em;  
+    padding-bottom: 1em;
     }
     
 #additional-elements {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-bottom: 1em;  
+    padding-bottom: 1em;
     }
 
 h2 {
@@ -168,7 +168,22 @@ h3 {
 }
 
 ul{
-  font-size: 20px;
+    font-size: 20px;
+}
+
+dl{
+    font-size: 20px;
+}
+
+dt{
+    font-family: looking-flowers-script, sans-serif;
+    font-size: 35px;
+    color: #04cac4;
+    padding: 10px 0;
+}
+
+dd{
+    font-size: 16px;
 }
 
 footer.primary {
@@ -239,7 +254,7 @@ input[type=submit] {
     font-family: acuta, serif;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 991px) {
     header.primary h1 a {
       max-width: 290px;
       margin: auto;
