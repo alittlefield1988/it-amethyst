@@ -16,7 +16,7 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 	border: 1px solid #999;
-	height: 635px;
+	height: 670px;
 	overflow: hidden; /*Avoids showing all of the images momentarily while JS loads */
 	border-radius: 6px;
 }
