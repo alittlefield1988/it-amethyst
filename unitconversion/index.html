@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Unit Converter">
+    <meta name="keywords" content="JavaScript, HTML, CSS">
+    <meta name="author" content="Anya Littlefield">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/additional-methods.min.js"></script>
+</head>
+<body>
+<form id="myform">
+    <div class="formcontainer">
+        <h1>Unit Converter (AJAX)</h1>
+        <fieldset id="detail">
+            <legend>Unit Converter (AJAX)</legend>
+            <br>
+            <label class="formlabel" for="FromValue">From Value: </label>
+            <input type="text" id="FromValue" name="FromValue" size="15" maxlength="15"       
+                   data-rule-required="true"  data-msg-required="Value is Required" 
+                   data-rule-number="true" data-msg-number="Value must be a Number">
+            <label class="error" for="FromValue" id="FromValueError"></label>
+            <br><br>
+            
+            <label class="formlabel">From Unit: </label>
+                <label for="FCentimeters">
+                    <input type="radio" name="FromUnit" id="FCentimeters" value="cm"
+                           data-rule-required="true" data-msg-required="From Unit is Required" />centimeters
+                </label>
+                <label for="FMeters">
+                    <input type="radio" name="FromUnit" id="FMeters" value="m">meters
+                </label>
+                <label for="FKilometers">
+                    <input type="radio" name="FromUnit" id="FKilometers" value="km">kilometers
+                </label>
+                <label for="FInches">
+                    <input type="radio" name="FromUnit" id="FInches" value="in">inches
+                </label>
+                <label for="FFeet">
+                    <input type="radio" name="FromUnit" id="FFeet" value="ft">feet
+                </label>
+                <label for="FYards">
+                    <input type="radio" name="FromUnit" id="FYards" value="yd">yards
+                </label>
+                <label for="FMiles">
+                    <input type="radio" name="FromUnit" id="FMiles" value="mi">miles
+                </label>
+            <label for="FromUnit" class="error" id="FromUnitError"></label>
+            <br><br>
+      
+            <label class="formlabel">To Unit: </label>
+                <label for="TCentimeters">
+                    <input type="radio" name="ToUnit" id="TCentimeters" value="cm"
+                           data-rule-required="true" data-msg-required="To Unit is Required" />centimeters
+                </label>
+                <label for="TMeters">
+                    <input type="radio" name="ToUnit" id="TMeters" value="m">meters
+                </label>
+                <label for="TKilometers">
+                    <input type="radio" name="ToUnit" id="TKilometers" value="km">kilometers
+                </label>
+                <label for="TInches">
+                    <input type="radio" name="ToUnit" id="TInches" value="in">inches
+                </label>
+                <label for="TFeet">
+                    <input type="radio" name="ToUnit" id="TFeet" value="ft">feet
+                </label>
+                <label for="TYards">
+                    <input type="radio" name="ToUnit" id="TYards" value="yd">yards
+                </label>
+                <label for="TMiles">
+                    <input type="radio" name="ToUnit" id="TMiles" value="mi">miles
+                </label>
+            <label for="ToUnit" class="error" id="ToUnitError"></label>
+            <br><br>
+
+            <label class="formlabel">To Value: </label>
+            <span id="ToValue"></span>
+            <br><br>
+
+            <input type="button" value="Calculate" name="Calculate" onclick="calculate();">
+            <input type="button" value="Clear" name="Clear" onclick="clearform();" novalidate>
+        </fieldset>
+    </div>
+</form>
+<script src="assets/js/script.js"></script>
+</body>
+</html>
