@@ -53,30 +53,22 @@ function calculate() {
             tounit = document.getElementById("TMiles").value;
         }
         
-        // URL and method used with AJAX Call
         var myURL = "https://brucebauer.info/assets/ITEC3650/unitsconversion.php";
         var myMethod = "POST";
 
-        /* AJAX calculator requires Operand1, Operator, and Operand 2 */
-        
-        /* Create the data object and add the values as properties to the object 
-        The names of the properties must EXACTLY match the names required by the AJAX page  */
         var myData = {};
         myData.FromValue = fromvalue;
         myData.FromUnit = fromunit;
         myData.ToUnit = tounit;
         
-        /* Make sure document is ready */
         $(document).ready(function() {
 
-            /* Perform AJAX call to process data */
             $.ajax({
               method: myMethod,
               data: myData,
               url: myURL
             })
 
-            /* AJAX complete - display the result */
             .done(function( msg ) {
                 document.getElementById("ToValue").innerHTML = msg;
             });
@@ -87,7 +79,6 @@ function calculate() {
 function clearform() {
     "use strict";
     
-    /* Set all of the form values to blank or false */
     document.getElementById("FromValue").value = "";
     document.getElementById("FromValueError").innerHTML = "";
     document.getElementById("FCentimeters").checked = false;
