@@ -50,7 +50,7 @@ function getdata() {
                         "datasets":[{"label":"Boxley",
                         "data": values,
                         "fill":false,
-                        "borderColor":"rgb(75, 192, 192)",
+                        "borderColor":"#79BED9",
                         "lineTension":0.1}]},
                         "options":{ 
                             responsive: false,
@@ -87,7 +87,7 @@ function getdata() {
                         "datasets":[{"label":"Ponca",
                         "data": values,
                         "fill":false,
-                        "borderColor":"rgb(75, 192, 192)",
+                        "borderColor":"#345923",
                         "lineTension":0.1}]},
                         "options":{ 
                             responsive: false,
@@ -124,7 +124,7 @@ function getdata() {
                         "datasets":[{"label":"Pruitt",
                         "data": values,
                         "fill":false,
-                        "borderColor":"rgb(75, 192, 192)",
+                        "borderColor":"#8DA658",
                         "lineTension":0.1}]},
                         "options":{ 
                             responsive: false,
@@ -160,7 +160,7 @@ function getdata() {
                         "datasets":[{"label":"Carver",
                         "data": values,
                         "fill":false,
-                        "borderColor":"rgb(75, 192, 192)",
+                        "borderColor":"#593B02",
                         "lineTension":0.1}]},
                         "options":{ 
                             responsive: false,
